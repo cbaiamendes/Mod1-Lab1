@@ -89,7 +89,8 @@ namespace SelfAssLab
             Console.WriteLine("BirthDate: " + birthDate);
             Console.WriteLine(addressLine1 + ", " + city + ", " + stateProvince + ", " + zipPostal + " " + country);
 
-            
+            //Assign Vlaue to UProgram Info
+
 
         }
     }
