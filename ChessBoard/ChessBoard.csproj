@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F1053681-337F-48CA-A975-1EF5D93DD0DC}</ProjectGuid>
+    <ProjectGuid>{BC4AC336-8144-4EFB-B6E3-78FBA3A68E8D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Mod1_Lab1</RootNamespace>
-    <AssemblyName>Mod1-Lab1</AssemblyName>
+    <RootNamespace>ChessBoard</RootNamespace>
+    <AssemblyName>ChessBoard</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Square.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

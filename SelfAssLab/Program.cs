@@ -10,88 +10,75 @@ namespace SelfAssLab
     {
         static void Main(string[] args)
         {
-            //Student and Teacher info
-            String fisrtName = "";
-            String lastName = "";
+            GetStudentInformation();
+            GetTeacherInformation();
 
-            DateTime birthDate;
+        }
 
-            String addressLine1 = "";
-            String addressLine2 = "";
+        static void GetStudentInformation()
+        {
+            Console.WriteLine("Enter the Student first name");
+            string firstName = Console.ReadLine();
+            Console.WriteLine("Enter the Student last name");
+            string lastName = Console.ReadLine();
+            Console.WriteLine("Enter the Student BirthDate (yyyy,mm,dd)");
+            DateTime birthDay = Convert.ToDateTime(Console.ReadLine());
+            Console.WriteLine("Enter the Student Address information");
+            Console.WriteLine("Enter streat");
+            string street = Console.ReadLine();
+            Console.WriteLine("Enter city");
+            string city = Console.ReadLine();
+            Console.WriteLine("Enter State/Province");
+            string stateProvince = Console.ReadLine();
+            Console.WriteLine("Enter Zip/Postal");
+            string zipPostal = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Enter Country");
+            string country = Console.ReadLine();
 
-            String city = "";
-            String stateProvince = "";
-            String zipPostal = "";
-            String country = "";
+            PrintStudentDetails(firstName, lastName, birthDay, street, city, stateProvince, zipPostal, country);
+        }
 
-            //UProgram Info
-            String programName = "";
-            String departmentHead = "";
-            String degrees = "";
+        static void GetTeacherInformation()
+        {
+            Console.WriteLine("Enter the Teacher first name");
+            string firstName = Console.ReadLine();
+            Console.WriteLine("Enter the Teacher last name ");
+            string lastName = Console.ReadLine();
+            Console.WriteLine("Enter the Teacher BirthDate (yyyy,mm,dd) ");
+            DateTime birthDay = Convert.ToDateTime(Console.ReadLine());
+            Console.WriteLine("Enter the Teacher Address information");
+            Console.WriteLine("Enter streat");
+            string street = Console.ReadLine();
+            Console.WriteLine("Enter city");
+            string city = Console.ReadLine();
+            Console.WriteLine("Enter State/Province");
+            string stateProvince = Console.ReadLine();
+            Console.WriteLine("Enter Zip/Postal");
+            string zipPostal = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Enter Country");
+            string country = Console.ReadLine();
 
+            PrintTeacherDetails(firstName, lastName, birthDay, street, city, stateProvince, zipPostal, country);
+        }
 
-            //Degree info
-            String degreeName = "";
-            int creditsRequirement;
+        static void PrintStudentDetails(string first, string last, DateTime bDay, string street1, string cty, string state, string zip, string ctry)
+        {
+            Console.WriteLine("{0} {1} was born on: {2}", first, last, bDay);
+            Console.WriteLine("Lives in {0}, {1}, {2}", street1, cty, state);
+            Console.WriteLine("{0}, {1}", zip, ctry);
+            Console.WriteLine();
+        }
 
-            //Course Info
-            String courseName = "";
-            int credits;
-            int durationInWeeks;
-            String teacher = "";
+        static void PrintTeacherDetails(string first, string last, DateTime bDay, string street1, string cty, string state, string zip, string ctry)
+        {
+            Console.WriteLine("The Teacher: {0} {1} was born on: {2}", first, last, bDay);
+            Console.WriteLine("Lives in {0}, {1}, {2}", street1, cty, state);
+            Console.WriteLine("{0}, {1}", zip, ctry);
+        }
 
-            //Assign Values to Student
-            Console.WriteLine("Enter the Student Information");
-            Console.Write("FisrtName: ");
-            fisrtName = Console.ReadLine();
-            Console.Write("LastName: ");
-            lastName = Console.ReadLine();
-            Console.Write("BirthDate (yyyy,mm,dd): ");
-            birthDate = Convert.ToDateTime(Console.ReadLine());
-            Console.Write("Street: ");
-            addressLine1 = Console.ReadLine();
-            Console.Write("City: ");
-            city = Console.ReadLine();
-            Console.Write("State/Province: ");
-            stateProvince = Console.ReadLine();
-            Console.Write("Zip/Postal: ");
-            zipPostal = Convert.ToString(Console.ReadLine());
-            Console.Write("Country: ");
-            country = Console.ReadLine();
-            Console.WriteLine("==============================");
-            Console.WriteLine("======== Student Info ========");
-            Console.WriteLine("Name: " + fisrtName + " " + lastName);
-            Console.WriteLine("BirthDate: " + birthDate);
-            Console.WriteLine(addressLine1 + ", "+ city + ", "+ stateProvince +", "+ zipPostal + " "+ country);
-
-            //Assign Value to Teacher
-            Console.WriteLine("==============================");
-            Console.WriteLine("Enter the Teacher Information");
-            Console.Write("FisrtName: ");
-            fisrtName = Console.ReadLine();
-            Console.Write("LastName: ");
-            lastName = Console.ReadLine();
-            Console.Write("BirthDate (yyyy,mm,dd): ");
-            birthDate = Convert.ToDateTime(Console.ReadLine());
-            Console.Write("Street: ");
-            addressLine1 = Console.ReadLine();
-            Console.Write("City: ");
-            city = Console.ReadLine();
-            Console.Write("State/Province: ");
-            stateProvince = Console.ReadLine();
-            Console.Write("Zip/Postal: ");
-            zipPostal = Convert.ToString(Console.ReadLine());
-            Console.Write("Country: ");
-            country = Console.ReadLine();
-            Console.WriteLine("==============================");
-            Console.WriteLine("======== Teacher Info ========");
-            Console.WriteLine("Name: " + fisrtName + " " + lastName);
-            Console.WriteLine("BirthDate: " + birthDate);
-            Console.WriteLine(addressLine1 + ", " + city + ", " + stateProvince + ", " + zipPostal + " " + country);
-
-            //Assign Vlaue to UProgram Info
-
-
+        class Square
+        {
+            private string x;
         }
     }
 }
